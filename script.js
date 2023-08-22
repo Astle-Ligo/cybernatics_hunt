@@ -137,7 +137,7 @@ function printclue2(clues2) {
 
     var clue2 = document.createElement("div")               //CREAING A NEW DIV clue1 (DIV FOR SHOWING THE USER THE NEXT CLUE PRINTING THE CLUE)
     clue2.id = "clue2"                                  //SETTING AN ID FOR clue1
-
+    
 
     screen.appendChild(Left)                            //MAKING Left A SUB CHILD OF screen
     Left.appendChild(ServerMessage)                     //MAKING ServerMessage A SUB CHILD OF Left
@@ -512,18 +512,19 @@ function sent() {
         printstory(storys);
 
 
-        clues1 = "LIB BRID"
+        clues1 = "OPEN THE LINK BELOW!!!!"
         printclue1(clues1);
 
-        clues2 = "This must lead somewhere. Your team needs to get there now! Hurry!"
+        window.open("https://astle-ligo.github.io/cybernatics_final_clue/")
+
+        clues2 = "https://astle-ligo.github.io/cybernatics_final_clue/"
         printclue2(clues2);
 
         userInputedAnswer.push(userinput)
         //printimage()
         clue4count++
 
-        window.location("https://www.google.com/")
-        document.getElementById('form').submit()
+        //document.getElementById('form').submit()
 
     }
 
